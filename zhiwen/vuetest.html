@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vuetest</title>
+</head>
+<script type="text/javascript" src="js/vue.js/vue.min.js"></script>
+<script src="https://cdn.bootcss.com/vue-resource/1.5.1/vue-resource.js"></script>
+
+<body>
+<div id="dome">
+   <ul><li v-for="(test,index) in innerTest">
+       {{parenttest}} - {{index}}  - {{test}}
+   </li></ul>
+    <li v-for="n in 5">
+        {{n}}
+    </li>
+</div>
+<script>
+    var arr=['10','12','23','44','42'];
+    var newarr = arr.filter(item =>item.indexOf('2')<0);
+    console.log(newarr);
+    var vm = new Vue ({
+        el: '#dome',
+        data: {
+          parenttest :"傻傻哒",
+          innerTest :['第一个','第二个','第三个']
+         }
+
+    });
+
+</script>
+</body>
+</html>

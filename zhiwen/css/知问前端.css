@@ -1,0 +1,316 @@
+body{
+	margin: 40px 0 0 0;  /* 上右下左*/
+	padding: 0;
+	font-size: 12px;
+	font-family: 宋体;
+	background-color: #FFFFFF;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover{
+	background: #abd8ef ;
+}
+
+#ui-id-15,#ui-id-13,#ui-id-17{
+	background: url(../image/header_bg.png);
+}
+/*改变主题复选框边框样式*/
+label.ui-button:nth-child(3){
+	border-radius: 4px;
+}
+label.ui-button:nth-child(5){
+	border-radius: 4px;
+}
+/* 改变jquery ui  背景*/
+.ui-widget-header{
+	background: url(../image/ui_header_bg.png);
+}
+/*改变日历按钮图片位置*/
+.ui-datepicker-trigger{
+	padding: 0 0 0 10px;
+}
+/*改变日历ui边框css*/
+.ui-datepicker-month{
+	height: 20px;
+	border: 1px solid #aed0ea;
+}
+.ui-datepicker-year{
+	float: left;
+	border: 1px solid #aed0ea;
+}
+
+/*改变提示css
+reg_tooltip{
+	border:1px solid #666666;
+}
+*/
+.ui-tooltip {
+	
+	color:#666;
+}
+ /* 改变按钮ui*/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+background:url(../img/ui_header_bg.png);
+}
+#header{
+	width: 100%;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	position:absolute ;
+	top: 0;
+	background: url(../image/header_bg.png);
+}
+#header .header_mian{
+	width: 1000px;
+	height: 40px;
+	margin: 0 auto;
+}
+#header .header_mian h1{
+	font-size: 20px;
+	margin: 0;
+	padding: 0 10px;
+	color: #666;
+	float: left;
+	height: 40px;
+	line-height: 40px;
+}
+#header .header_search{
+	float: left;
+}
+#header .header_search .search{
+	margin: 5px;
+    width: 300px;
+    height: 24px;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+   	font-size: 14px;
+   	text-indent: 5px;
+}
+#header .header_button{
+	float: left;
+}
+#header .header_button #search_button{
+	height: 30px;
+    top: 4px;
+    margin: 0;
+}
+#header .header_button #question_button{
+    height: 30px;
+    top: 4px;
+    margin: 0 ;	
+   
+}
+#header .header_member{
+	float: right;
+	height: 40px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #666;
+}
+#header .header_member{
+	text-decoration: none;
+	color: #666;
+	font-size: 14px;
+}
+#header .header_member a {
+	color: #666;
+}
+#reg,#login,#question{
+	margin: 15px 0 0 15px;
+}
+#reg p,#login p,#question p{
+	margin: 1opx 0;
+	padding: 0;
+}
+#reg p label,#login p label,#question p label{
+	font-size: 14px;
+	color: #666;
+}
+#reg p .star,#login p .star,#question p .star{
+	color: red;
+	font-size: 14px;
+}
+#reg .text,#login .text,#question .text{
+	border:1px solid  #CCCCCC;
+	width: 200px;
+	height: 25px;
+	color: #666;
+	background: #fff;
+	text-indent:5px;
+	border-radius: 4px;
+	
+}
+/*日历表ui*/
+.ui-datepicker-month{
+	height: 20px;
+	border: 1px solid #aed0ea;
+}
+.ui-datepicker-year{
+	float: left;
+	border: 1px solid #aed0ea;
+}
+#reg p .star,#login p .star {
+    color:maroon;
+}
+#reg p .succ,#login p .succ {
+    display:inline-block;
+    width:30px;
+    background:url(../image/reg_succ.png) no-repeat;
+}
+#reg ol,#login ol {
+    margin:0;
+    padding:0 0 0 20px;
+    color:maroon;
+}
+#reg ol li,#login ol li {
+    height:20px;
+}
+#loading {
+	background: url(../image/loading.gif) no-repeat 20px center;
+	line-height: 25px;
+	font-size:14px;
+	font-weight:bold;
+	text-indent:40px;
+	color:#666;
+}
+#error {
+	background: url(../image/error.png) no-repeat 20px center;
+	line-height: 25px;
+	font-size:14px;
+	font-weight:bold;
+	text-indent:40px;
+	color:#666;
+}
+#expires {
+	position: relative;
+	top: 2px;
+	margin: 0 0 0 100px;
+}
+#main {
+	width:800px;
+	margin:0 auto;
+	padding:10px 0 0 0;
+}
+#main .main_left {
+	width:580px;
+	float:left;
+}
+#main .main_right {
+	width:200px;
+	float:right;
+}
+#tabs {
+	border:none;
+}
+#ui-tabs-1,#ui-tabs-2,#ui-tabs-3 {
+	border:1px solid #aaa;
+	border-top:none;
+	position:relative;
+	top:-2px;
+}
+#accordion {
+
+}
+/*改变ui图像和颜色*/
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited{
+	color:#666;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+	color: #666;
+}
+.ui-state-active .ui-icon, .ui-button:active .ui-icon{
+	background-image: url(images/ui-icons_2e83ff_256x240.png);
+}
+.content h4 {
+	color:#666;
+	font-weight:normal;
+}
+.content h3 {
+	color:#369;
+}
+.content .editor {
+	line-height:180%;
+	
+	color:#333;
+}
+.content .bottom {
+	padding:5px 0 0 0;
+}
+.content hr {
+	color:#ccc;
+	height:1px;
+}
+
+.content .up {
+	float:right;
+	color:#369;
+	cursor:pointer;
+}
+.content .down {
+	
+	color:#369;
+	cursor:pointer;
+}
+.content .comment {
+	cursor: pointer;
+	color:#369;
+}
+.content  .comment_list{
+	border:1px solid #ccc;
+	border-radius: 4px;
+	min-height: 25px;
+	display: none;
+	padding: 5px 10px;
+}
+.content .comment_list dl dd {
+	margin: 0;
+	padding: 3px 0 5px 0;
+	
+	}
+.content .comment_content  dd {
+		margin: 0;
+	}
+.content .comment_button dl dd {
+	margin: 0;
+}
+
+.content .comment_list dl dt {
+	margin: 0;
+	padding: 5px 0 0 0;
+	color: #ccc
+}
+.content .comment_list dl dd.date {
+	color: #666;
+}
+.content .comment_list dl.comment_content {
+	border-bottom:1px solid #ccc;
+}
+.content .comment_list .comment_add {
+	text-align:right;
+}
+.content .comment_list .comment_add textarea {
+	width:98%;
+	border:1px solid #ccc;
+	border-radius:4px;
+	background:#fff;
+	padding:5px;
+	font-size:12px;
+	color:#666;
+	resize:none;
+	margin: 0 0 5px 0;
+}
+.content .comment_list .comment_add input {
+	cursor:pointer;
+}
+.content .comment_road dd {
+	background: url(../image/comment_load.gif) no-repeat 75px 45%;
+}
+.content .load_more {
+	width:100%;
+	margin:10px 0 0 0;
+	height:30px;
+	line-height:30px;
+	padding: 0;
+}
+.content .load_more img {
+	padding:5px 0 0 0;
+}

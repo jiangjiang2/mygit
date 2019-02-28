@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>知问前端</title>
+	</head>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery-ui.js" ></script> 
+    <script src="js/jquery-ui.min.js" ></script> 
+	<script type="text/javascript" src="uEditor/uEditor.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/jquery-migrate-1.2.1.js"></script>
+	<script type="text/javascript" src="js/jquery.form.js"></script>
+	<script src="js/知问前端.js" ></script> 
+	<link href="css/jquery-ui.css" rel="stylesheet" type="text/css" />
+	<link href="css/jquery-ui.theme.css" rel="stylesheet" type="text/css" />
+	<link href="image/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link rel="stylesheet" href="uEditor/uEditor.css" type="text/css" />
+	<link href="css/知问前端.css" rel="stylesheet" type="text/css" />
+	
+	<body>
+	<div id="header">
+		<div class="header_mian">
+			<h1>知问</h1>
+		   <div class="header_search">
+				<input type="text" class="search" name="search"  />
+		   </div>
+		   <div class="header_button">
+			    <button id="search_button">搜索</button>
+			    <button id="question_button">提问</button>
+		   </div>
+		   <div class="header_member">
+		   	    <a href="javascript:void(0)" id="reg_a">注册</a>
+		   	    <a href="javascript:void(0)" id="mamber">用户</a>
+		   	    |
+		   	    <a href="javascript:void(0)" id="login_a">登录</a>
+		   	    <a href="javascript:void(0)" id="logout">退出</a>
+		   </div>
+		</div>
+	</div>
+	
+<div id="main">
+	<div class="main_left">
+		<div id="tabs">
+			<ul>
+				<li><a href="tab1.html">tab1</a></li>
+				<li><a href="tab2.html">tab2</a></li>
+				<li><a href="tab3.html">tab3</a></li>
+			</ul>
+		</div>
+		
+		<div class="content">
+		
+	   </div>
+	</div>
+ 
+	<div class="main_right">
+		<div id="accordion">
+			<h3>菜单1</h3>
+			<div><p>内容1</p></div>
+			<h3>菜单2</h3>
+			<div>内容2</div>
+			<h3>菜单3</h3>
+			<div>内容3</div>
+		</div>
+	</div>
+</div>
+
+	
+	
+	<form id="reg"  action="123"  title="注册">
+		<ol class="reg_error"></ol>
+		<p>
+	    <label for="user" >账  号：</label>
+		<input type="text" name="user" class="text" id="user"/>
+		<span class="star">*</span>
+		</p>
+		<p>
+	    <label for="pass" >密  码：</label>
+		<input type="password" name="pass" class="text" id="pass" />
+		<span class="star">*</span>
+		</p>
+		<p>
+	    <label for="email" >邮  箱：</label>
+		<input type="text" name="email" class="text" id="email" />
+		<span class="star">*</span>
+		</p>
+		<p>
+		<label>性 别：</label>
+		<input type="radio" name="sex" value="male" id="male" checked="checked"><label for="male">男</label></input><input type="radio" name="sex" value="female" id="female"><label for="female">女</label></input>
+	    </p>
+		<p>
+	    <label for="date" >生 日：</label>
+		<input type="text" name="birthday" class="text" readonly="readonly"  id="date" />
+		
+		</p>
+	</form>
+	
+	<form id="login" title="会员登录">
+	<ol class="login_error"></ol>
+		<p>
+	    <label for="user" >账  号：</label>
+		<input type="text" name="login_user" class="text" id="login_user"/>
+		<span class="star">*</span>
+		</p>
+		<p>
+	    <label for="pass" >密  码：</label>
+		<input type="password" name="login_pass" class="text" id="login_pass" />
+		<span class="star">*</span>
+		</p>
+		<p>
+		<input type="checkbox" name="expires" id="expires" checked="checked" /><label for="expires">登录后请遵守用户协议</label>
+	    </p>
+	</form>
+	<form id="question" action="123.html" method="post" title="提问">
+		<p>
+	    <label for="user" >问题名称：</label>
+		<input type="text" name="title" class="text" style="width:390px;" id="title"/> 
+		</p>
+	    <p>
+	    	<textarea class="uEditorCustom"name="content">请输入问题描述</textarea>
+	    </p>
+	</form>
+	<div id="loading">数据交互中......</div>
+	<div id="error">请登录后操作......</div>
+	</body>
+</html>
+
